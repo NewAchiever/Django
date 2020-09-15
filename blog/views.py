@@ -6,8 +6,9 @@ def index(request):
         <head></head>
         <body>
         <ul>
-            <li><a href="/posts">posts</a></li>
-            
+            <li><a href="accounts/login">Login</a></li>
+            <li><a href="accounts/register">Signup</a></li>   
+            <li><a href="accounts/all_users">All users</a></li>         
         </ul>
         </body>
     </html>"""

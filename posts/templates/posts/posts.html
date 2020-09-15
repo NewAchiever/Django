@@ -9,11 +9,16 @@
     {% if posts %}
         <ul>
             {% for post in posts %}
-                <li><label for="">{{ forloop.counter }}. </label> 
-                <label for="">Title: </label><p>{{ post.title }}</p></li>
+                <li>
+                    <label for="">Title: </label>{{ post.title }} <br>
+                    <label for="">Author: </label>{{ post.author }} <br>
+                    <label for="">Date of post: </label>{{ post.posted_on_date }} <br>
+                    <label for=""><p><label for="">Posts: </label>{{ post.post }}</p></label>
+                </li>
             {% endfor %}
         </ul>
         
     {% endif %}
 </body>
 </html>
+
